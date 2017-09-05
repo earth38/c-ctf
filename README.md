@@ -1,1 +1,1 @@
-# ctf-misc
+# akictf
