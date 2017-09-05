@@ -13,5 +13,5 @@ for x in range(size[0]):
     #y
     for y in range(size[1]):
         #ピクセルを取得
-        r,g,b = rgb_im.getpixel((x,y))
+        r,g,b = rgb_im.getpixel((x,y))https://github.com/earth38/akictf/edit/master/stegoNoobs1.py
         print(str(r) + "," + str(g) + "," + str(b))
