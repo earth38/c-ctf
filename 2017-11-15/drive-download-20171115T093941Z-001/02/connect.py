@@ -7,7 +7,6 @@ with open("picture") as f:
 
 
 for (i,x) in enumerate(lines):
-#for line in lines:
     #画像の読み込み
     im = Image.open(x) 
     #im = Image.open(line)
@@ -24,17 +23,12 @@ for (i,x) in enumerate(lines):
         for y in range(size[1]):
             #ピクセルを取得
             r,g,b = rgb_im.getpixel((x,y))
-            #反転処理
-            #if g==0:
-            #    r = 255
-            #    g = 255
-            #    b = 255
-            #set pixel
+           #set pixel
             if i == 0:
                 im2.putpixel((x,y),(r,g,b,0))
             elif g != 0:
                 im2.putpixel((x,y),(r,g,b,0))
             else:  
                 pass
-    #show
+#show
 im2.show()
